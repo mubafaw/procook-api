@@ -9,8 +9,12 @@ Create, Read, Update and Delete
     php artisan db:seed
 4) Run app<br>
     php artisan serve
-5) Available endpoints
 
+5) Navigate your localhost (equivalent)  to see the API in use in the following locale <br>
+    en-gb -> http://localhost/en-gb/data <br>
+    fr-ch -> http://localhost/fr-ch/data <br>    
+
+6) Available endpoints <br>
 ### Get all products
 GET /api/product/all 
 
