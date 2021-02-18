@@ -1,14 +1,14 @@
 ### Get all products
-GET http://procook-api.loc/api/product/all 
+GET http://localhost/api/product/all 
 
 ### Get all products in a given category
-GET http://procook-api.loc/api/product/cookware 
+GET http://localhost/api/product/cookware 
 
 ### Get product
-GET http://procook-api.loc/api/product/cookware/3 
+GET http://localhost/api/product/cookware/3 
 
 ### Create product
-POST http://procook-api.loc/api/product/10 
+POST http://localhost/api/product/10 
 content-type: application/json
 {
     "product_name" : "ProCook Non-Stick Bakeware Set 6 piece",
@@ -18,11 +18,11 @@ content-type: application/json
 }
 
 ### Update product
-PUT http://procook-api.loc/api/product/1 
+PUT http://localhost/api/product/1 
 content-type: application/json
 {
     "product_price": 75.99
 }
 
 ### Delete product
-DELETE http://procook-api.loc/api/product/7 
+DELETE http://localhost/api/product/7 

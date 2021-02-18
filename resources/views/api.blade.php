@@ -65,10 +65,6 @@
         </div>
         <div class="w-1/2 lg:w-1/3">
             <div class="pl-2 pt-4">
-                <input v-on:click="selectLocaleEn" type="radio" id="en-gb" value="picked">
-                <label for="English">en-gb</label><br>
-                <input v-on:click="selectLocaleFr" type="radio" id="fr-ch" value="picked">
-                <label for="French">fr-ch</label><br>
                 <div>
                     <h3 class="font-semibold text-sm">{{__ ('api.availableAPIEndpoints') }} ({{__ ('api.toCRUD') }})</h3>
                     <textarea v-model="availableAPIEndPoints" class="w-full border-solid border-4 border-red-300 text-xs" 
@@ -91,23 +87,13 @@
                 httpRequestObject: null,
                 httpRequestString: null,
                 httpVerb:'get',
-                picked: null,
                 products: null,
                 productsCount: null,
-                url:'http://procook-api.loc/api/product/all',
+                url:'http://',
             }
         },
         mounted () {
             this.readFromFile;
-            axios.get(this.url)
-                .then(response => {
-                    this.products = response.data; 
-                    this.productsCount = response.data.length
-                })
-                .catch(error => {
-                    console.log(error)                        
-                    this.errored = JSON.stringify(error.message)
-                });
         },
         computed: {
             readFromFile() {
@@ -117,12 +103,6 @@
             },
         },
         methods: {
-            selectLocaleEn() {
-                window.location.href = 'http://procook-api.loc/en-gb/data'
-            },
-            selectLocaleFr() {
-                window.location.href = 'http://procook-api.loc/fr-ch/data'
-            },
             clearRequest() {
                 this.errored = null
             },
