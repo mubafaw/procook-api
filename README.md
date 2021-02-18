@@ -1,7 +1,7 @@
 # Simple Laravel CRUD RESTful API webservice to select, update and delete products for a given category
 Create, Read, Update and Delete 
 
-## To run locally play game
+## To run 
 1) Simply download / clone repository<br>
 2) Run Migration
     php artisan migrate
