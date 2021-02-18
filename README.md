@@ -21,8 +21,8 @@ GET /api/product/cookware
 GET /api/product/cookware/3 
 
 ### Create product
-POST /api/product/10 
-content-type: application/json
+POST /api/product/10 <br>
+content-type: application/json <br>
 {
     "product_name" : "ProCook Non-Stick Bakeware Set 6 piece",
     "product_desc" : "Bakeware",
@@ -31,8 +31,8 @@ content-type: application/json
 }
 
 ### Update product
-PUT /api/product/1 
-content-type: application/json
+PUT /api/product/1 <br>
+content-type: application/json <br>
 {
     "product_price": 75.99
 }
