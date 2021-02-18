@@ -3,11 +3,11 @@ Create, Read, Update and Delete
 
 ## To run 
 1) Simply download / clone repository<br>
-2) Run Migration
+2) Run Migration<br>
     php artisan migrate
-3) Seed database
+3) Seed database<br>
     php artisan db:seed
-4) Run app
+4) Run app<br>
     php artisan serve
 5) Available endpoints
 
